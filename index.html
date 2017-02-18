@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion Jquery</title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"> <!-- importante -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}*
+
+
+	body{
+		 font-family: Verdana, Geneva, sans-serif;
+		 font-size: 14px;
+		 color: #333;
+		 text-align: center;
+		 padding: 50px;
+	}
+
+	.container{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+
+	h4{
+		background: purple;
+		color: #fff;
+		padding: 10px 0 10px 10px;
+		margin-bottom: 3px;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	h5{
+		margin-bottom: 40px;
+	}
+
+	.container div{
+		background: #eaeaea	;
+		text-align: left;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	.tutorial{
+		text-align: left;
+		width: 70%;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+
+</style>
+
+<link rel="stylesheet" href="http://prismjs.com/themes/prism.css">
+
+</head>
+
+<body>
+
+<h1>Accordion Jquery</h1>
+<h5>by dircebologna</h5>
+
+<div class="container">
+	<h4>#Title</h4> <!-- title -->
+	<div>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+	</div> <!-- container hide text -->
+
+	<h4>#Title</h4> <!-- title -->
+	<div>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+	</div> <!-- container hide text -->
+
+
+	<h4>#Title</h4> <!-- title -->
+	<div>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+	</div> <!-- container hide text -->		
+</div>
+
+
+<div class="tutorial">
+
+<h3>jquery</h3>
+
+<section class="language-markup">
+	<pre><code>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">&lt;script></code></pre>
+</section>
+
+<pre class="language-javascript"><code class="language-javascript">$('h4').next().hide();
+	$('h4').click(function(){
+	$(this).next().slideToggle();
+	$('h4').not(this).next().stop(true,true).slideUp();
+});</code></pre>
+
+<br>
+<h3>Html</h3>
+
+<section class="language-markup">
+	<pre><code>&lt;h4>#Title&lt;/h4> <!-- title -->
+&lt;div>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap<br>
+	into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum<br>
+	passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+&lt;/div> <!-- container hide text -->
+
+&lt;h4>#Title&lt;/h4> <!-- title -->
+&lt;div>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap<br>
+	into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum<br>
+	passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+&lt;/div> <!-- container hide text -->
+
+&lt;h4>#Title&lt;/h4> <!-- title -->
+&lt;div>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap<br>
+	into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum<br>
+	passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.						
+&lt;/div> <!-- container hide text --></code></pre>
+</section>
+  </div>
+
+
+
+</body>
+
+
+<script src="http://prismjs.com/prism.js"></script>
+
+<script type="text/javascript">
+	$('h4').next().hide();
+
+	$('h4').click(function(){
+		$(this).next().slideToggle();
+		$('h4').not(this).next().stop(true,true).slideUp();
+	});
+
+</script>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
